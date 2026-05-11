@@ -63,7 +63,7 @@ export default function App() {
 
       <main className="main">
         {activeView === "verify" && (
-          <VerifierLookup readContract={readContract} />
+          <VerifierLookup />
         )}
         {activeView === "holder" && address && (
           <HolderDashboard readContract={readContract} address={address} />
